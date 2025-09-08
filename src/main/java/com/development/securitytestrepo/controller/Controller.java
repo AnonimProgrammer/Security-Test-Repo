@@ -1,5 +1,6 @@
-package com.development.securitytestrepo;
+package com.development.securitytestrepo.controller;
 
+import com.development.securitytestrepo.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,10 +20,10 @@ public class Controller {
             new Student("Alice Johnson", 21)
     ));
 
-    @GetMapping("/csrf-token")
-    public CsrfToken getCsrfToken(HttpServletRequest request) {
-        return (CsrfToken) request.getAttribute(CsrfToken.class.getName());
-    }
+//    @GetMapping("/csrf-token")
+//    public CsrfToken getCsrfToken(HttpServletRequest request) {
+//        return (CsrfToken) request.getAttribute(CsrfToken.class.getName());
+//    }
 
     @GetMapping("/hello")
     public String hello(HttpServletRequest request) {

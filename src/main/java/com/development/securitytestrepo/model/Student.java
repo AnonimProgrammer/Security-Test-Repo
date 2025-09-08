@@ -1,4 +1,4 @@
-package com.development.securitytestrepo;
+package com.development.securitytestrepo.model;
 
 public class Student {
 
