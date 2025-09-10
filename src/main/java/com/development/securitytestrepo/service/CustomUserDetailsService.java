@@ -1,6 +1,5 @@
 package com.development.securitytestrepo.service;
 
-import com.development.securitytestrepo.exception.UserNotFoundException;
 import com.development.securitytestrepo.model.User;
 import com.development.securitytestrepo.model.UserPrincipal;
 import com.development.securitytestrepo.repo.UserRepository;
